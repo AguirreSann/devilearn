@@ -54,7 +54,7 @@ def course_detail(request):
             'duration': 8,
             'instructor': 'Ricardo Cuellar'
         },
-        'course_content':
+        'course_content': [
             {
                 'id': 1,
                 'name': 'Introducción al curso',
@@ -69,6 +69,7 @@ def course_detail(request):
                     }
                 ]
             }
+        ]
     }
     return render(request, 'courses/course_detail.html', {
         'course': course
